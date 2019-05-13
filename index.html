@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="style.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+    </head>
+    <body>
+
+        <h2>Zemljotresi</h2>
+            <div class="zemljotresi">
+            <form>
+                Grad: <br>
+                <input type="text" id="city" name="city"  placeholder="Unesite Naziv Grada"><br>
+                Radius (km): <br>
+                <input type="text" id="radius" name="radius" placeholder="Unesite Radius">
+                Od Datuma: <input type="date"  id="startDate" name="startDate" value="startDate" placeholder="Start Date">
+                Do Datuma: <input type="date"  id="endDate" name="endDate" value="endDate" placeholder="End Date"><span style="display: none;" id="upozorenje">Datum ne sme biti veci od danasnjeg</span>
+                
+                <input type="button" value ="Prikazi Zemljotrese" id ="get" onclick="GetEarthquakeData();">
+              </form>
+            </div>
+
+            <div id="content"></div>
+
+            <div id="list">
+            <form autocomplete="off">
+                <div class="autocomplete" style="width:300px;">
+                  <input  id="myInput" type="text" name="myCountry" placeholder="Earthquake">
+                </div>
+                <input type="button" value ="Add" id ="add" onclick="addEarthquake();">
+            </form>
+
+                <ol id="list_item">
+
+                </ol>
+
+            </div>
+
+            <input type="button" value ="Detaljnije o izabranim zemljotresima" id ="finish" onclick="matching();" >
+
+              <script src="main.js"></script>      
+    </body>
+</html>
