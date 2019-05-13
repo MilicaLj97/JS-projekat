@@ -3,6 +3,7 @@ var earthquakes = [];
 var earthquakeArr =[];
 function GetEarthquakeData(){
 
+    
     city=document.getElementById("city").value;
     radius=document.getElementById("radius").value;
     startDate=document.getElementById("startDate").value;

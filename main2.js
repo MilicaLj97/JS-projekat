@@ -1,6 +1,7 @@
 
 
 (function move() {
+    
     var ea = JSON.parse(localStorage.getItem("match")); 
     var elem = document.getElementById("myProgress");  
     
