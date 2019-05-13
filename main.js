@@ -3,7 +3,7 @@ var earthquakes = [];
 var earthquakeArr =[];
 function GetEarthquakeData(){
 
-    
+
     city=document.getElementById("city").value;
     radius=document.getElementById("radius").value;
     startDate=document.getElementById("startDate").value;
@@ -18,6 +18,7 @@ function GetEarthquakeData(){
       alert("Morate popuniti sva polja!");
       return;
     } 
+    
 
     let cityLength;
     let cityWidth;
